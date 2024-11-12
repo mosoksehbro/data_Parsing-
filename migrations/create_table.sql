@@ -1,0 +1,23 @@
+CREATE TABLE NodeB_Data (
+    id SERIAL PRIMARY KEY,
+    nodeb_name VARCHAR(255) NOT NULL,
+    nodeb_id INTEGER,
+    subrack_no INTEGER,
+    subrack_name VARCHAR(255),
+    slot_no INTEGER,
+    subsystem_no INTEGER,
+    iub_trans_bearer_type VARCHAR(255),
+    ip_trans_apart_ind VARCHAR(255),
+    iub_trans_delay INTEGER,
+    satellite_trans_ind BOOLEAN,
+    nodeb_protocol_version VARCHAR(50),
+    resource_management_mode VARCHAR(50),
+    nodeb_trace_switch VARCHAR(50),
+    nodeb_host_type VARCHAR(50),
+    peer_rnc_id VARCHAR(255),
+    peer_nodeb_id VARCHAR(255),
+    sharing_type_of_nodeb VARCHAR(50),
+    cn_operator_index INTEGER,
+    dss_nodeb_flag BOOLEAN,
+    administrative_state VARCHAR(50)
+);
